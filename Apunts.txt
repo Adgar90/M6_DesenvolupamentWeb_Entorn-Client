@@ -1,0 +1,87 @@
+18/09/23 ~
+
+Funció 'alert' = mostra un 'pop-up' amb el missatge que s'indiqui
+
+Per crear una funció -> function 'nomDeLaFunció'() { aquí el codi que volguem desenvolupar }
+
+Esdeveniments:
+onclick=""
+hover=""
+onmouseover=""
+ondragstart=""
+
+Funcions:
+alert() = mostra un 'pop-up' amb el missatge que s'indiqui
+
+21/09/23
+
+Com demanar dades en JS: amb prompt
+Exemple: let a = prompt("contingut");
+
+Per comentar en JS tenim // (linia) o /* ... */ (multilinea)
+
+console.log("____"); mostra el missatge per consola
+console.error("____"); mostra el missatge en vermell (per alertar de què és tracta d'un error)
+console.warn("____"); mostra el missatge en groc (semblant al .error, però menys important)
+console.clear(); esborra el text en consola
+console.time("identificador"); serveix per calcular el temps real que necessita per executar, executar
+console.timeLog("____"); mostra el temps des de què es va crear el console.time();
+console.timeEnd("____"); mateixa funcionalitat timeLog, però destrueix el timer un cop mostrat
+
+Posar instruccions seguides és mala pràctica perque dificulta la llegibilitat del nostre programa.
+
+Les variables són 'case sensitive'. Es recomanable declarar-les en 'camel case' -> unaVariable
+
+En els indentificadors es permet començar amb qualsevol caràcter menys nombres
+
+Per declarar:
+    STRING -> "", '', ``(per mostrar un text concatenats amb variables) -> `text${var1}text${var2}`
+
+
+28/09/23
+
+Usos concrets per resoldre coses habituals
+
+Temporitzadors ~ controlar les execucions mesurant el temps que
+
+02/10/23
+
+Sintaxi del llenguatge
+
+Objecte DATE
+
+new Date(); -> construeix un objecte DATE amb la data del sistema
+new Date(valor); -> construeix un objecte amb la data que li indiquem
+new Date(dataString); -> Valor String que representa una data
+    · La String ha d'estar en un format reconegut pel mètode Date.parse()
+
+    - month/date/year
+    - month_name date, year -> January 12, 2004
+    - day_of_week month_name date year hours:minutes:seconds time_zone 
+    (como: Tue May 25 2004 00:00:00 GMT-0700)
+    - ISO 8601 YYYY-MM-DDTHH:mm:ss.sssZ (como: 2004-05- 25T00:00:00).
+
+new Date(any, mes, dia, hora, minuts, segons, milisegons);
+
+    any: Valor sencer que representa un any. Els valors des de 0 a 99 representen els anys des de 1900 a 1999. Vegeu l'exemple a continuació.
+    mes: Valor sencer que representa un mes, començant per zero com a gener i acabant amb 11 com a desembre.
+    dia: Opcional. Valor sencer que representa el dia del mes.
+    hora: Opcional. Valor sencer que representa l'hora del dia.
+    minut: Opcional. Valor sencer que representa els minuts d'un segment de temps.
+    segon: Opcional. Valor sencer que representa els segons d'un segment de temps.
+    milisegons: Opcional. Valor sencer que representa els milisegons d'un segment de temps.
+
+Exemples:
+
+var data; 
+data=new Date ("10/25/2012"); 
+data= new Date("25 Nov 1971"); 
+data= new Date("Nov 25 1971"); 
+data= new Date("25 Nov 1971 00:30"); 
+data= new Date("25 Nov 1971 00:30:24"); 
+data= new Date(2012, 0); 
+data= new Date(2005, 4, 5, 17, 55, 55);
+
+Quan poses dades incorrectes, l'objecte DATE et corregeix i et posa la data correcte
+
+
