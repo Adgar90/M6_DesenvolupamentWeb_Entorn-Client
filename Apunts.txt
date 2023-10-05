@@ -85,3 +85,8 @@ data= new Date(2005, 4, 5, 17, 55, 55);
 Quan poses dades incorrectes, l'objecte DATE et corregeix i et posa la data correcte
 
 
+05/10/2023
+
+Caracteristiques més beneficioses de JS:
+    · S'executa en tots els navegadors
+    · 
