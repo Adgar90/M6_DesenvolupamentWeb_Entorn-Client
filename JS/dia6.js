@@ -96,8 +96,9 @@ function retornaCanvi() {
     let valors = ["500","200","100","50","20","10","5","2","1","0.50","0.20","0.10","0.05","0.02","0.01"];
     while (dinersTmp > 0) {
         for (let i=0; i<calers.length; i++) {
-            if (dinersTmp >= calers[i]){
+            while (dinersTmp >= calers[i]){
                 dinersTmp = (dinersTmp - calers[i]).toFixed(2);
+                console.log("dinersTmp val = " + dinersTmp);
                 canvi[i]++;
                 canviFinal+= calers[i];
             }
