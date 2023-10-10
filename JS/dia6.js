@@ -114,5 +114,4 @@ function retornaCanvi() {
         }
     }
     console.log(`Total canvi ${canviFinal.toFixed(2)} €`);
-
 }
