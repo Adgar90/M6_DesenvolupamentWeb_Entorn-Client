@@ -90,3 +90,62 @@ Quan poses dades incorrectes, l'objecte DATE et corregeix i et posa la data corr
 Caracteristiques més beneficioses de JS:
     · S'executa en tots els navegadors
     · 
+
+19/10/2023
+
+DOM -> Document Object Model
+BOM -> Browser Object Model
+
+    · Objecte WINDOW 
+    propietats destacades ->
+        - defaultStatus
+        - self
+        - closed
+        - opener
+        - localStorage
+        - innerWidth, innerHeight
+        - sessionStorage
+    metodes destacats ->
+        - alert(missatge)
+        - confirm(missatge)
+        - prompt(missatge)
+        - stop()
+        - open(url, windowName, params)
+
+Exemples:
+    var win = window.open("", "Estadístiques", "scrollbars=yes,witdh=780,height=200,");
+    win.document.body.innerHTML = `<h1>Estadístiques</h1>`;
+
+    · Objecte NAVIGATOR
+    · Objecte SCREEN
+    metodes destacats ->
+        - availHeight
+        - height
+        - availWidth
+        - width
+        - colorDepth
+    · Objecte HISTORY
+    · Objecte LOCATION
+    propietats destacades ->
+        - hash
+        - host
+        - hostname
+        - href
+        - origin
+        - pathname
+        - port
+        - protocol
+        - search
+    metodes destacats ->
+        - assign()
+        - reload()
+        - replace()
+    Cookies -> fitxer de text en el que conté dades en format clau => valor perquè el servidor pugui recuperar informació de valor
+
+    Local Storage -> permet als llocs web emmagatzemar dades en format clau-valor i que tindran persistència inclús si es tanca el navegador (es guarda en format base de dades)
+        Funcions:
+         - setItem() -> window.localStorage.setItem('name', 'Obaseki Nosa');
+         - getItem() -> window.localStorage.getItem('name');
+         - removeItem() -> window.localStorage.removeItem('name');
+         - clear() -> window.localStorage.clear();
+         - key() -> window.localStorage.key();
