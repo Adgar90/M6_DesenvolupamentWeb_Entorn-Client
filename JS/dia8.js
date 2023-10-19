@@ -53,8 +53,8 @@ function compteLletres() {
     let quantesA = 0;
     let quantesB = 0;
     for (let i=0; i<text.length; i++) {
-        if (text.charAt(i) == 'a' || text.charAt(i) == 'A') { quantesA++; }
-        if (text.charAt(i) == 'b' || text.charAt(i) == 'B') { quantesB++; }
+        if (text.charAt(i) == 'a' || text.charAt(i) == 'A') { quantesA++; } // també es possible text[i] (representació del string com array ~ exclusiu JS ~)
+        if (text.charAt(i) == 'b' || text.charAt(i) == 'B') { quantesB++; } // simplificació amb text.toLowerCase() o text[i].toLowerCase()
     }
     console.log(`En el text hi ha ${quantesA} A i ${quantesB} B`);
 }
